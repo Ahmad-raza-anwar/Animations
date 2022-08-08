@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance-Animation</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        font-family: 'Courier New', Courier, monospace;
+        height: 100vh;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgb(34, 34, 34);
+      }
+      #container{
+        /* background-color: blueviolet; */
+        width: 80%;
+        transition: 0.6s;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #container div{
+        width: 70px;
+        height: 70px;
+        transform: rotate(30deg);
+        border: 1px solid black;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background-color: rgb(50, 185, 167);
+        animation: one 1s linear infinite;
+        animation-delay: calc(var(--i) * -0.5s);
+      }
+      @keyframes one {
+        0%{
+          background-color: rgb(56, 110, 103);
+          /* transform: rotate(0deg); */
+        }
+        50%{
+          background-color: rgb(6, 245, 213);
+          /* transform: rotate(360deg); */
+        }
+        100%{
+          background-color: rgb(56, 110, 103);
+          /* transform: rotate(0deg); */
+        }
+      }
+
+      #container #text{ 
+        font-size: 60px;
+        -webkit-text-stroke: 0.5px rgb(0, 204, 255);
+        color: transparent;
+        top: -40px;
+        position: absolute;
+      }
+
+      #three{
+        width: 65%;
+        height: 50vh;
+        position: absolute;
+        top: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background-color: saddlebrown; */
+      }
+      #three_a{
+        transition: 0.6s;
+        width: 30%;
+        height: 95%;
+        border-radius: 10px;
+        background-color: rgba(255, 245, 238, 0.438);
+      }
+      #three_a:hover{
+        margin-top: -40px;
+        background-color: white;
+        border-bottom: 8px solid rgb(0, 204, 255);
+      }
+      #three_a h2{
+        margin-top: 5vh;
+        font-size: 50px;
+        color: rgb(34, 34, 34);
+        text-align: center;
+      }
+      #three_a p{
+        margin-top: 5vh;
+        font-weight: bold;
+        font-size: 22px;
+        color: rgb(34, 34, 34);
+        text-align: center;
+      }
+
+      
+
+  </style>
+
+
+
+</head>
+<body>
+
+
+
+  <div id="container"  data-aos="zoom-in">
+
+    <div style="--i:1;"></div>
+    <div style="--i:6;"></div>
+    <div style="--i:10;"></div>
+    <div style="--i:2;"></div>
+    <div style="--i:4;"></div>
+    <div style="--i:5;"></div>
+    <div style="--i:11;"></div>
+    <div style="--i:3;"></div>
+    <div style="--i:8;"></div>
+    <div style="--i:15;"></div>
+    <div style="--i:9;"></div>
+    <div style="--i:14;"></div>
+    <div style="--i:16;"></div>
+    <div style="--i:7;"></div>
+    <div style="--i:12;"></div>
+    <div style="--i:13;"></div>
+    <div style="--i:17;"></div>
+    <div style="--i:18;"></div>
+    <div style="--i:20;"></div>
+    <div style="--i:21;"></div>
+    <div style="--i:22;"></div>
+    <div style="--i:23;"></div>
+    <div style="--i:24;"></div>
+    <div style="--i:25;"></div>
+    <div style="--i:26;"></div>
+    <div style="--i:27;"></div>
+    <div style="--i:28;"></div>
+    <div style="--i:29;"></div>
+    <div style="--i:30;"></div>
+    <div style="--i:31;"></div>
+    <div style="--i:32;"></div>
+    <div style="--i:33;"></div>
+    <div style="--i:34;"></div>
+    <div style="--i:35;"></div>
+    <div style="--i:36;"></div>
+    <div style="--i:37;"></div>
+    <div style="--i:38;"></div>
+    <div style="--i:39;"></div>
+    <div style="--i:40;"></div>
+    <div style="--i:41;"></div>
+    <div style="--i:42;"></div>
+    <div style="--i:43;"></div>
+    <div style="--i:44;"></div>
+    <div style="--i:45;"></div>
+    <div style="--i:46;"></div>
+    <div style="--i:47;"></div>
+    <div style="--i:48;"></div>
+    <div style="--i:49;"></div>
+    <div style="--i:50;"></div>
+    <div style="--i:51;"></div>
+    <div style="--i:52;"></div>
+    <div style="--i:53;"></div>
+    <div style="--i:54;"></div>
+    <div style="--i:55;"></div>
+    <div style="--i:56;"></div>
+    <div style="--i:57;"></div>
+    <div style="--i:58;"></div>
+    <div style="--i:59;"></div>
+    <div style="--i:60;"></div>
+    <div style="--i:61;"></div>
+    <div style="--i:62;"></div>
+    <div style="--i:63;"></div>
+    <div style="--i:64;"></div>
+    <div style="--i:65;"></div>
+    <div style="--i:66;"></div>
+    <div style="--i:67;"></div>
+    <div style="--i:68;"></div>
+    <div style="--i:69;"></div>
+
+
+
+
+    <h2 id="text">
+        Welcome the new Project
+    </h2> 
+
+    
+
+  </div>
+
+  <div id="three">
+
+    <div id="three_a"  data-aos="flip-left">
+      <h2>Hello!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus pariatur, dolore voluptatibus aut nam iure officia fugit. Corporis,</p>
+    </div>
+    <div id="three_a"  data-aos="flip-up">
+      <h2>Hey!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus pariatur, dolore.</p>
+    </div>
+    <div id="three_a"  data-aos="flip-right">
+      <h2>Well!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus pariatur, dolore voluptatibus aut nam iure officia fugit. Corporis,</p>
+    </div>
+
+  </div>
+
+
+
+
+
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>City Animation</title>
+
+
+    <style>
+        body{
+          overflow-x: hidden;
+        }
+        *{
+          padding: 0;
+          margin: 0;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        #main{
+          width: 100%;
+          height: 100vh;
+          padding: 1px;
+          filter: brightness(100%);
+          background-size: cover;
+          animation: bg 4s linear infinite;
+          background-image: url(./city-images/bg28.jpg);
+        }
+        @keyframes bg {
+          0%{filter: brightness(80%);}
+          50%{filter: brightness(110%);}
+          100%{filter: brightness(80%);}
+        }
+        #car1{
+          width: 3px;
+          height: 20px;
+          /* margin:  60vh 55%; */
+          margin-top: 440px;
+          position: absolute;
+          margin-left: 790px;
+          filter: blur(0.5px);
+          border-radius: 50%;
+          box-shadow: 2px 2px 10px 0 #deb08e;
+          animation: car1 0.6s linear infinite;
+          background-color: #deb08e;
+          animation-delay: calc(var(--i) * -0.3s);
+        }
+        @keyframes car1 {
+          
+          0%{
+            transform: rotate(50deg);
+            margin-left: 790px;
+            margin-top: 440px;
+          }
+          20%{
+            margin-left: 710px;
+            margin-top: 500px;
+          }
+          40%{
+            transform: rotate(-45deg);
+            margin-left: 740px;
+            margin-top: 540px;
+          }
+          60%{
+            transform: rotate(-45deg);
+            margin-left: 790px;
+            margin-top: 600px;
+          }
+          80%{
+            transform: rotate(-45deg);
+            margin-left: 860px;
+            margin-top:650px;
+          }
+          100%{
+            transform: rotate(-45deg);
+            margin-left: 910px;
+            margin-top: 710px;
+          }
+        }
+
+        #car4{
+          width: 3px;
+          height: 20px;
+          /* margin:  60vh 55%; */
+          margin-top: 440px;
+          position: absolute;
+          margin-left: 770px;
+          filter: blur(0.5px);
+          border-radius: 50%;
+          box-shadow: 2px 2px 10px 0 #deb08e;
+          animation: car4 0.5s linear infinite;
+          background-color: #deb08e;
+          animation-delay: calc(var(--l) * -0.3s);
+        }
+        @keyframes car4 {
+          
+          0%{
+            transform: rotate(50deg);
+            margin-left: 770px;
+            margin-top: 440px;
+          }
+          20%{
+            margin-left: 700px;
+            margin-top: 500px;
+          }
+          40%{
+            transform: rotate(-45deg);
+            margin-left: 720px;
+            margin-top: 540px;
+          }
+          60%{
+            transform: rotate(-45deg);
+            margin-left: 770px;
+            margin-top: 600px;
+          }
+          80%{
+            transform: rotate(-45deg);
+            margin-left: 850px;
+            margin-top:650px;
+          }
+          100%{
+            transform: rotate(-45deg);
+            margin-left: 940px;
+            margin-top: 710px;
+          }
+        }
+
+
+        #car2{
+          width: 3px;
+          height: 20px;
+          /* margin:  60vh 55%; */
+          margin-top: 440px;
+          position: absolute;
+          margin-left: 770px;
+          border-radius: 50%;
+          filter: blur(0.5px);
+          box-shadow: 2px 2px 10px 0 #deb08e;
+          animation: car2 0.4s linear infinite;
+          background-color: #deb08e;
+          animation-delay: calc(var(--j) * -0.4s);
+        }
+        @keyframes car2 {
+          
+          100%{
+            transform: rotate(50deg);
+            margin-left: 760px;
+            margin-top: 440px;
+          }
+          80%{
+            margin-left: 670px;
+            margin-top: 500px;
+          }
+          60%{
+            transform: rotate(-45deg);
+            margin-left: 650px;
+            margin-top: 540px;
+          }
+          40%{
+            transform: rotate(-45deg);
+            margin-left: 700px;
+            margin-top: 600px;
+          }
+          20%{
+            transform: rotate(-45deg);
+            margin-left: 760px;
+            margin-top:650px;
+          }
+          0%{
+            transform: rotate(-45deg);
+            margin-left: 800px;
+            margin-top: 710px;
+          }
+        }
+
+        #car3{
+          width: 3px;
+          height: 20px;
+          /* margin:  60vh 55%; */
+          margin-top: 440px;
+          position: absolute;
+          margin-left: 760px;
+          border-radius: 50%;
+          filter: blur(0.5px);
+          box-shadow: 2px 2px 10px 0 #deb08e;
+          animation: car3 0.3s linear infinite;
+          background-color: #deb08e;
+          animation-delay: calc(var(--k) * -0.5s);
+        }
+        @keyframes car3 {
+          
+          100%{
+            transform: rotate(50deg);
+            margin-left: 770px;
+            margin-top: 440px;
+          }
+          80%{
+            margin-left: 650px;
+            margin-top: 500px;
+          }
+          60%{
+            transform: rotate(-45deg);
+            margin-left: 640px;
+            margin-top: 540px;
+          }
+          40%{
+            transform: rotate(-45deg);
+            margin-left: 680px;
+            margin-top: 600px;
+          }
+          20%{
+            transform: rotate(-45deg);
+            margin-left: 740px;
+            margin-top:650px;
+          }
+          0%{
+            transform: rotate(-45deg);
+            margin-left: 780px;
+            margin-top: 710px;
+          }
+        }
+
+
+        #light{
+          width: 20px;
+          height: 20px;
+          background-color: #ebcbb4;
+          border-radius: 50%;
+          margin-left: 945px;
+          margin-top: 450px;
+          filter: blur(1px);
+          box-shadow: 30px 30px 30px 10px #deb08e;
+          clip-path: polygon(50% 0%, 54% 44%, 98% 35%, 55% 52%, 79% 91%, 49% 58%, 21% 91%, 42% 51%, 2% 35%, 46% 42%); 
+          animation: light 2s linear infinite;
+        }
+        @keyframes light {
+          0%{
+            opacity: 1;
+          }
+          30%{
+            opacity: 0;
+          }
+          60%{
+            opacity: 1;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
+
+
+      /* ---------------------------------- Navbar ------------------------------- */
+
+
+
+
+      #navbar{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        /* background-color: brown; */
+      }
+      #logo{
+        width: 60px;
+        height: 15px;
+        background-size: cover  ;
+        background-image: url(./city-images/logo-light.png);
+        /* background-color: lightcoral; */
+      }
+      #nav{
+        width: 600px;
+        height: 60px;
+        /* background-color: lightgreen; */
+      }
+      #nav ul{
+        height: 60px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+      }
+      #nav ul li{
+        /* background-color: wheat; */
+        height: 20px;
+      }
+      #nav ul li a{
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+      #home-content{
+        width: 200px;
+        height: 200px;
+        top: 35vh;
+        left: 24%;
+        position: absolute;
+        /* background-color: violet; */
+      }
+      #home-content span{
+        font-size: 80px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+      }
+      #home-content h2{
+        font-size: 70px;
+        font-weight: bold;
+        color: white;
+      }
+
+      
+      
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+
+    <div id="main">
+      
+
+      <div id="navbar">
+        <div id="logo"></div>
+        <div id="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contect</a></li>
+            <li><a href=""><i class="fas fa-cart-plus"></i></a></li>
+            <li><a href=""><i class="fas fa-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="home-content">
+        <span>Making</span>
+        <h2>Video</h2>
+      </div>
+
+
+      <div id="car1" style="--i:3;"></div>
+      <div id="car1" style="--i:4;"></div>
+      <div id="car1" style="--i:1;"></div>
+      <div id="car1" style="--i:2;"></div>
+      <div id="car1" style="--i:6;"></div>
+      <div id="car1" style="--i:5;"></div>
+
+      <div id="car4" style="--l:3;"></div>
+      <div id="car4" style="--l:4;"></div>
+      <div id="car4" style="--l:1;"></div>
+      <div id="car4" style="--l:2;"></div>
+      <div id="car4" style="--l:6;"></div>
+      <div id="car4" style="--l:5;"></div>
+      
+      <div id="car2" style="--j:4;"></div> 
+      <div id="car2" style="--j:2;"></div>
+      <div id="car2" style="--j:1;"></div>
+      <div id="car2" style="--j:3;"></div>
+      <div id="car2" style="--j:5;"></div>
+
+      <div id="car3" style="--k:4;"></div> 
+      <div id="car3" style="--k:2;"></div>
+      <div id="car3" style="--k:1;"></div>
+      <div id="car3" style="--k:3;"></div>
+      <div id="car3" style="--k:5;"></div>
+
+      <div id="light"></div>
+
+    </div>
+
+
+  
+</body>
+</html>
